@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f3f3f3;
+  --fb-color: #1877f2;
+  --fb-green: #42b72a;
+  --ff-main: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px 0;
+}
+
+.fb-img {
+  width: 300px;
+}
+
+h2,
+p {
+  margin: 0;
+  font-family: var(--ff-main);
+  font-weight: 100;
+}
+
+.main-sub {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.wow {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  height: 350px;
+  width: 400px;
+  display: flex;
+  text-align: end;
+  flex-direction: column;
+  text-align: center;
+}
+
+input {
+  border: 1px solid #dddfe2;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--ff-main);
+  padding: 4px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid var(--fb-color);
+  box-shadow: 0 0 5px #719ece;
+}
+
+hr {
+  margin: 15px 0;
+}
+
+.btn {
+  height: 50px;
+}
+
+.btn-primary {
+  margin: 10px 0;
+}
+
+.success {
+  background-color: var(--fb-green);
+  align-self: center;
+  margin: 20px 0;
+  color: white;
+  font-weight: bold;
+}
+
+.success:hover {
+  background-color: #298516;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.link-sub {
+  color: black;
+  text-decoration: none;
+}
+
+.link-sub:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+@media only screen and (max-width: 765px) {
+  .container {
+    display: block;
+    height: 600px;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    margin-bottom: 20px;
+  }
+}
